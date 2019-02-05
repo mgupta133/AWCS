@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#0E81D1"
+
+    android:weightSum="10">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="2">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/top"/>
+
+</LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="8"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="8"
+            android:orientation="vertical"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="4"
+                android:padding="25dp"
+                >
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/curved_bg"
+                    android:weightSum="4"
+                    android:orientation="vertical"
+                    android:padding="20dp">
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="2"
+                    >
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+
+
+                        >
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:inputType="textEmailAddress"
+                            android:id="@+id/username"
+                            android:hint="Username"
+                            android:paddingLeft="5dp"
+                            android:drawablePadding="5dp"
+                            android:textColorHint="#999"
+                            />
+                    </android.support.design.widget.TextInputLayout>
+
+
+                </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="2"
+                        >
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/design"
+                            app:passwordToggleEnabled="false"
+                            >
+                            <EditText
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:inputType="textPassword"
+                                android:id="@+id/password"
+                                android:hint="Password"
+                                android:paddingLeft="5dp"
+                                android:drawablePadding="5dp"
+
+                                />
+
+                        </android.support.design.widget.TextInputLayout>
+
+                    </LinearLayout>
+
+
+
+
+
+
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="4">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:weightSum="4"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="2"
+                        android:paddingTop="20dp"
+                        android:paddingBottom="20dp"
+                        android:paddingRight="40dp"
+                        android:paddingLeft="40dp"
+                        android:gravity="center">
+
+                        <!--<Button
+                            android:id="@+id/button"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:background="@drawable/selector_xml_btn_yellow"
+                            android:onClick="checkLogin"
+                            android:text="Sign In"
+                            android:textColor="#0E81D1"
+                            android:textStyle="bold"
+                            />-->
+
+                        <br.com.simplepass.loading_button_lib.customViews.CircularProgressButton
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Log In"
+                            android:textColor="#FFF"
+                            app:spinning_bar_color="#FFF"
+                            app:spinning_bar_padding="6dp"
+                            app:spinning_bar_width="4dp"
+                            android:id="@+id/login"
+                            android:background="@drawable/shape_default"
+                            />
+
+
+
+
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="2"
+                        android:padding="20dp"
+                        android:gravity="center">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:text=""
+                            android:id="@+id/textView3"
+                            android:layout_gravity="center_horizontal"
+                            android:textColor="#d4d1d1"
+                            android:onClick="skip"
+                            />
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
